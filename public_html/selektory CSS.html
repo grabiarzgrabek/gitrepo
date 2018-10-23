@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8" />
+<title>Selektory CSS</title>
+<meta name="generator" content="Geany 1.32" />
+<style>
+    body { font-size: 16; }
+    #element { border: 2px solid #0A48E3; }
+    .ramka { border: 2px solid #E3550A; }
+/* 0,0,0,4 */
+div ul ul li { border: 2px solid #0AE387; }
+/* 0,0,1,0 */
+div ul ul li {
+    border: 2px solid #B47B7B;
+    background-color: #ccc;
+    padding: 10px 40px 20px 5px;
+    margin: 5%;
+} 
+/* top right bottom left */
+/* 0,0,0,4 */
+
+h2 { font-size: 1rem; }
+</style>
+
+</head>
+
+<body>
+    <div class="naglowek">
+    <h2>Nagłówek mojej strony</h2>
+    </div>
+  <div>
+  <ul>
+	<li>
+	  <ul>
+          <li>element listy na górze</li>
+		<li id="element" class="ramka" style="border-color: black;">element liczby zagniezdzonej</li>
+        <li>element listy na dole<li>
+	  </ul>
+	</li>
+  </ul>
+</div>
+</body>
+
+</html>
