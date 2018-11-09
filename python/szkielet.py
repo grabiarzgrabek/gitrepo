@@ -2,12 +2,10 @@
 # -*- coding: utf-8 -*-
 
 
-
 def main(args):
-    a = input('Podaj bok a:')
-    a = input('Podaj bok b:')
+    return 0
 
-    obwod =2*(int(a)+int(b))
-    n__':
+
+if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
