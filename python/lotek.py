@@ -15,14 +15,24 @@ def main(args):
             liczby.append(liczba)
             ileliczb -= 1 # dekrementacja o 1
             
-    print(liczby)
+    #print(liczby)
     
     ileliczb = len(liczby)
     typy ileliczb:
+    while ileliczb:
         typ = input('Podaj typ: ')
         if typ not in typy:
             typy.add(typ)
-            ileliczb -= 1  
+            ileliczb -= 1 # dekrementacja o 1
+            
+            #print(typy)
+        
+    trafione = set(liczby) & typy
+    if trafione:
+        print("Trafione:", trafione)
+    else:
+        print("Spróbuj jeszcze raz!")
+        
     
     
     return 0
