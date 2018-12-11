@@ -10,11 +10,21 @@
 from datetime import date
 from osoba_obj import Osoba
 
-class Kirowca(Osoba):
+class Kierowca(Osoba):
     
-    def __init__self, imie, nazwisko, kategoria):
+    licznik = 0
+    
+    def __init__(self, imie, nazwisko, kategoria):
         super().__init__(imie, nazwisko)
         self.kategoria = kategoria
+        Kierowca.licznik += 1
+        
+    def __del__(self):
+        Kierowca.licznik -= 1
+        
+    @staticmethod # metoda statyczna
+    def KierowcaLicz():
+        return Kierowca.licznik
         
 class Samochod:
     
@@ -22,19 +32,28 @@ class Samochod:
         self.marka = marka
         self.model = model
         self.rok = rocznik
-        self.kierowca = kierowca
         
-         def wiek(self):
-             dzis = date.today()
-             return dzis.year - self.rok
+        
+    def wiek(self):
+        dzis = date.today()
+        return dzis.year - self.rok
              
 
 
 def main(args):
-    s1 = Samochod('Fiat', 'Tipo', 2000)
-    s2 = Samochod('Peugeot', '308', 2007)
-    print(s1.moidel, s1.wiek())
-    print(s2.moidel, s22.wiek())
+    s1 = Samochod('Fiat', 'Tipo', '2000')
+    s2 = Samochod('Peugeot', '308', '2007')
+    s3 = Samochod('Fiat', 'Tipo', '2000')
+    s4 = Samochod('Peugeot', '308', '2007')
+    
+    
+    k1 = Kierowca('Adam', 'Słodowy', 'B')
+    # print(k1.imie, k1.kategoria)
+    print(k1.imie, k1.nazwisko, k1.kategoria)
+    print(s1.marka, s1.model, s1.rok)
+    print(k1.licznik)
+    k2 = Kierowca('Ewa', 'Bąk', 'BC')
+    print(k2.licznik)
     return 0
 
 if __name__ == '__main__':
