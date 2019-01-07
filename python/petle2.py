@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  grabowski_petle.py
+#  petle2.py
+#  
 
 def zad1():
     suma=0
@@ -42,4 +43,3 @@ def main(args):
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
-
