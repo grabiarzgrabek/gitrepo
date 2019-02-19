@@ -8,35 +8,34 @@ import random
 def main(args):
     ileliczb = 3
     liczby = []
-    #for i in range(3):
+    # for i in range(3):
     while ileliczb:
-        liczba = random.randint(0,10)
+        liczba = random.randint(0, 10)
         if not liczby.count(liczba):
             liczby.append(liczba)
-            ileliczb -= 1 # dekrementacja o 1
-            
-    #print(liczby)
+            ileliczb -= 1  # dekrementacja o 1
+    
+    # print(liczby)
     
     ileliczb = len(liczby)
-    typy ileliczb:
+    typy = set()
     while ileliczb:
-        typ = input('Podaj typ: ')
+        typ = int(input('Podaj typ: '))
         if typ not in typy:
             typy.add(typ)
-            ileliczb -= 1 # dekrementacja o 1
-            
-            #print(typy)
-        
+            ileliczb -= 1  # dekrementacja o 1
+    
+    # print(typy)
+    
     trafione = set(liczby) & typy
     if trafione:
-        print("Trafione:", trafione)
+        print("Trafione: ", trafione)
     else:
         print("Spróbuj jeszcze raz!")
-        
     
-    
+
     return 0
 
 if __name__ == '__main__':
     import sys
-    sys.exit(main(sys.argv))
+sys.exit(main(sys.argv))

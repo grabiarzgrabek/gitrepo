@@ -11,7 +11,6 @@ def czy_naturalna(n):
         return True
     return False
 
-
 def fib_it(n):
     if n < 2:
         return n
@@ -19,25 +18,29 @@ def fib_it(n):
     
     for i in range(2, n + 1):
         if a > 0:
-            print("{}/{} = {}".format(b, a, b / a))
+            print ("{}/{} = {}".format(b, a, b / a))
         wynik = a + b
         a, b = b, wynik
     return wynik
-
-
+    
+def fib_rek(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib_rek(n-1) + fib_rek(n-2)
+    
 def main(args):
-    # ~assert fib_it(0) == 0
-    # ~assert fib_it(1) == 1
-    # ~assert fib_it(7) == 13
-    assert fib_it(19) == 4181
-
+#    assert fib_it(0) == 0
+#    assert fib_it(1) == 1
+#    assert fib_it(7) == 13
+#    assert fib_rek(19) == 4181
     n = input('Który wyraz ciągu? ')
     while not czy_naturalna(n):
         print('Błędne dane!')
         n = input('Który wyraz ciągu? ')
     
-    print("F_it({}) = {}".format(n, fib_it(int(n))))
-
+    print("F_rek({}) = {}".format(n, fib_rek(int(n))))
     return 0
 
 if __name__ == '__main__':
