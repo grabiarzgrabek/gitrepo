@@ -4,31 +4,33 @@
 #  napisy.py
 
 def pobierz_dane1():
-    imie = input('Podaj imie: ')
+    imie = input('Podaj imię: ')
     nazwisko = input('Podaj nazwisko: ')
-    print("Witaj {} {}!".format(imie.strip().capitalize(),nazwisko.strip().capitalize()))
+    print("Witaj {} {}!".format(imie.strip().capitalize(),
+                                nazwisko.strip().capitalize()))
     imie = imie.strip()
     nazwisko = nazwisko.strip()
     if len(imie) > len(nazwisko):
-        print("imie > nazwisko")
+        print("Imię > nazwisko")
     elif len(imie) < len(nazwisko):
-        print("imie < nazwisko")
+        print("Imię < nazwisko")
     else:
-        print("imie = nazwisko")
-        
-# sprawdz plec
+        print("Imię == nazwisko")
+
+    # sprawdź płeć, 
     if imie[-1] == 'a':
         print("kobieta")
     else:
-        print("mezczyzna")
-    
+        print("mężczyzna")
+
+
 def pobierz_dane2():
-    nazwa = input("imie i nazwisko: ").strip()
+    nazwa = input("Imię i nazwisko: ").strip()
     while nazwa.count(' ') != 1:
-        nazwa = input("imie i nazwisko: ").strip()
+        nazwa = input("Imię i nazwisko: ").strip()
+
     samogloski = set(['a', 'o', 'u', 'e', 'y', 'i', 'ę', 'ą'])
-    inne = set([',', '.', '!','?', ' ', '\t'])
-    
+    inne = set([',', '.', '!', '?', ' ', '\t'])
     ileSa = 0
     ileSp = 0
     for znak in nazwa:
@@ -37,25 +39,33 @@ def pobierz_dane2():
         elif znak not in inne:
             ileSp += 1
     if ileSa > ileSp:
-        print("samogloski > spolgloski")
+        print("Samgłoski > spółgłoski")
     elif ileSa < ileSp:
-        print("spolgloski > samogloski")
+        print("Spółgłoski > samogłoski")
     else:
-        print("samogloski = spolgloski")
+        print("Samgłoski = spółgłoski")
 
 def pobierz_dane3():
-    nazwa = input("imie i nazwisko: ").strip()
-    while nazwa.count(' ') != 1:
-        nazwa = input("imie i nazwisko: ").strip()
-    samogloski = set(['a', 'o', 'u', 'e', 'y', 'i', 'ę', 'ą'])
-    inne = set([',', '.', '!','?', ' ', '\t'])
-    
-    
+    napis1 = input("Tekst: ").strip()
+    napis2 = ''
+    inne = set([',', '.', '!', '?', ' ', '\t'])
+    for znak in napis1:
+        if znak not in inne and not znak.isdigit():
+            if znak.islower():
+                napis2 += znak.upper()
+            else:
+                napis2 += znak.lower()
+        else:
+            napis2 += znak
+    print(napis2)
 
 def main(args):
-    pobierz_dane1()
+    # pobierz_dane1()
+    # pobierz_dane2()
+    pobierz_dane3()
     return 0
+
 
 if __name__ == '__main__':
     import sys
-    sys.exit(main(sys.argv))
+sys.exit(main(sys.argv))
