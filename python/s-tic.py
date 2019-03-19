@@ -50,7 +50,6 @@ def main(args):
     turtle.forward(48)
     turtle.left(90)
     turtle.forward(24)
-    turtle.left(90)
     turtle.done()
     return 0
 
