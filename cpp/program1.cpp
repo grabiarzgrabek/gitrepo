@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
  * bez nazwy.cxx
+=======
+ * program1.cpp
+>>>>>>> 00547c2bd9557565da9dc89bbf9eaf09548c4b4a
  */
 
 
@@ -15,5 +19,10 @@ int main(int argc, char **argv)
     cin >> liczba1;
     cout << "Podales: " << liczba1;
 	return 0;
+<<<<<<< HEAD
 }
 
+=======
+
+}
+>>>>>>> 00547c2bd9557565da9dc89bbf9eaf09548c4b4a
