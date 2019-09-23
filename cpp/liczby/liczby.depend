@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569227458 source:/home/kl2ag1/gitrepo/cpp/liczby/main.cpp
+	<iostream>
+
+1569226624 source:/home/kl2ag1/gitrepo/cpp/liczby/najwieksza.cpp
+	<iostream>
+
