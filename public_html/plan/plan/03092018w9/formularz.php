@@ -28,6 +28,18 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
+            <div class="col">
+<?php
+
+echo '<h2>Przetwarzanie formularza</h2>';
+print_r($_POST);
+
+?>
+
+
+            </div>
+        </div>
+        <div class="row">
             <div class="col-3">&nbsp;</div>
             <div class="col">
                 <h1 class="text-center">
