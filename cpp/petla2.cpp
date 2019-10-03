@@ -43,26 +43,30 @@ void prostokat2(int x, int y, char z) {
                 cout << endl;
     }
 }
-
-void choinka(int x, int y) {
-    int i, j;
-    for (i = 1; i <= x; i++) {
-        for (j = 1; j <= y; j++) {
-            cout << "#";
-        }
-        cout << endl;
-    }
-}
+void choinka(int x){
+    cout << "Podaj liczbe poziomow choinki: ";
+    cin >> x;
+    cout << endl;
+  int i,j;
+  for (i = 1; i<=x; i++)
+    {
+      for (j=1;j<=i;j++){
+        cout << "#";}
+      cout << endl;
+} }
 
 int main(int argc, char **argv)
 {
     int a, b;
     char znak;
-    cout << "Podaj rozmiar y, x: ";
-    cin >> a >> b;
+    cout << "Podaj rozmiar x, y: ";
+    cin >> b >> a;
     cout << "Podaj znak: ";
     cin >> znak;
     prostokat2(a, b, znak);
+
+    choinka(1);
+    cout << endl;
 
 	return 0;
 }
