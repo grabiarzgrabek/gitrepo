@@ -1,0 +1,4 @@
+php -S localhost:8000
+w terminalu ze skryptem php
+
+w przegladarce: localhost:8000/____.php
