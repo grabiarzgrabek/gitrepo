@@ -1,5 +1,5 @@
 /*
- * zadanie_funkcja.cpp
+ * cwiczenie1_funkcje.cpp
  */
 
 
@@ -15,8 +15,8 @@ void drukuj() {
 }
 
 void awans(int &staz, float &zarobek) {
-    staz = staz + 1;
-    zarobek = zarobek * 1,1;
+    staz += 1;
+    zarobek = zarobek * 1.1;
 }
 
 int main(int argc, char **argv)
@@ -25,3 +25,4 @@ int main(int argc, char **argv)
     drukuj();
 	return 0;
 }
+

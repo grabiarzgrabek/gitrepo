@@ -41,6 +41,8 @@ foreach ($_POST as $k => $v) {
     echo $k.' '.$v.'<br>';
     ${$k} = htmlspecialchars(trim($v));
 }
+    if (strlen($v) > 15)
+        $v = substr($v, 0, 14);
 
 if (isset($login)) {
 	echo '<p>Witaj '.$login.'</p>';
@@ -58,12 +60,18 @@ if (isset($login)) {
                 <h1 class="text-center">
                     Formularz<small>– w Bootstrapie</small>
                 </h1>
+                <p>
+                
+                    Tag akapitu: &it;p&gt;&lt;/p&gt;
+                
+                
+                </p>
                 <hr>
                 <form action="formularz.php" method="POST" name="dane" id="dane">
                     <input type="hidden" name="id_user" value="10">
                     <div class="form-group">
                         <label for="login">Login:</label>
-                        <input type="text" name="login" id="login" class="form-control">
+                        <input type="text" name="login" id="login" class="form-control" maxlength="15">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
@@ -71,7 +79,7 @@ if (isset($login)) {
                     </div>
                     <div class="form-group">
                         <label for="haslo">Hasło:</label>
-                        <input type="password" name="haslo" id="haslo" class="form-control">
+                        <input type="password" name="haslo" id="haslo" class="form-control" maxlength="15">
                     </div>
                     <label>Wybierz płeć:</label>
                     <div class="form-check">

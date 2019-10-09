@@ -40,14 +40,13 @@ int main(int argc, char **argv)
     //cout << b << endl;
     int suma = dodaj2(a, b);
     //cout << "Suma: " << suma << endl;
-
+    
     modyfikuj(a, b, suma);
-
+    
     cout << a << endl;
     cout << b << endl;
     cout << suma << endl;
-
+    
 
 	return 0;
-}
 }
