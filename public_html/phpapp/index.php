@@ -9,13 +9,10 @@ require_once(DINC.'db.php');
 require_once(DINC.'users.php');
 
 if (isset($_GET['id']))
-    $id=$_GET['id']
- else
-    $id=$_GET['id']
+	$id=$_GET['id'];
+else
+	$id='witam';
+
+include_once(DINC.'template.php');
 
 ?>
-
-/home/kl2ag1/gitrepo/public_html/phpapp/inc
-inc/
-localhost/~kl2ag1/phpapp
-127.0.0.1

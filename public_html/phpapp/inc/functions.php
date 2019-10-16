@@ -1,10 +1,32 @@
 <?php
-function get_page_content($id) {
-    if (file_exist($id.'html'))
-        include($id.'.html');
-    else
-        include('404')
+
+$pages = array(
+    'witam' => 'witamy',
+    'formularz' => 'formularz',
+    'klasa' => 'klasy'
+);
+function get_menu($id){
+    global $pages;
+    foreach ($pages as $p => $t) {
+    echo'
+<li class="nav-item">
+    <a class="nav-link" href="?id='.$p.'"'.$t.'</a>
+</li>
+        ';
+    }
 }
-void get_page_content(string id)
-def get_page_content(id):
+
+function get_page_title($id) {
+    global $pages;
+    if (array_key_exists($id, $pages))
+        echo $pages[$id]
+}
+
+function get_page_content($id) {
+	if (file_exists($id.'.html'))
+		include($id.'.html');
+	else
+		include('404.html');
+}
+
 ?>
