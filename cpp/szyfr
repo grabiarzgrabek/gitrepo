@@ -1,5 +1,5 @@
 /*
- * dekoduj.cpp
+ * oblicz.cpp
  * Copyright 2019  <>
  * znakiem koncz¹cym tablice znakow¹ jest \0
  */
@@ -23,6 +23,13 @@ void litery2liczby(char tabzn[], int rozmiar){
     }
     }
 
+void koduj(char tabzn[], int rozmiar){
+    int i = 0;
+    for (i = 0; i<rozmiar; i++){
+        cout << tabzn[i] <<" - "<<(int)tabzn[i] << endl;
+    }
+    }
+
 void odkoduj (int tabli[], int rozmiar){
     int i = 0;
     for (i = 0; i<rozmiar; i++){
@@ -32,7 +39,15 @@ void odkoduj (int tabli[], int rozmiar){
 
 int main(int argc, char **argv)
 {
-    int napis3[17] = {80, 111, 116, 101, 122, 110, 97, 32, 119, 105, 97, 100, 111, 109, 111, 115, 99};
-    odkoduj(napis3, 17);
+    int rozmiar = 26;
+    //char napis[rozmiar] = "Ala ma kota!";
+    //ascii();
+    //cout << endl;
+    //litery2liczby(napis, rozmiar);
+    char napis2[rozmiar] = "Fizyka fajnom kolega jest";
+    koduj(napis2, rozmiar);
+    cout<< endl;
+    int napis3[25] = {112, 111, 103, 99, 122, 109, 101, 110, 105, 107, 0};
+    odkoduj(napis3, 25);
     return 0;
 }
