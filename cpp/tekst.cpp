@@ -21,14 +21,13 @@ int main(int argc, char **argv)
         cout << tekst[i];
     }
     cout << endl;
-    
+
     i = 0;
     while (tekst[i] != '\0') {
         cout << tekst[i];
         i++;
     }
     cout << endl;
-	
+
 	return 0;
 }
-
