@@ -26,7 +26,7 @@ int main(int argc, char **argv)
     }
     }
     cout << endl;
-    cout<<"Liczba slow w twoim tekscie to "<<k-2<<"."<<endl;
+    cout<<"Liczba slow w twoim tekscie to "<<k+2<<"."<<endl;
 
 
     return 0;
