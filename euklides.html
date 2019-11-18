@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>bez nazwy</title>
+</head>
+
+<body>
+    
+<h1>Algorytm Euklidesa</h1>
+
+<div>
+    <label>a:</label>
+    <input type="text" id="a">
+    <br>
+    <label>b:</label>
+    <input type="text" id="b">
+    <br>
+    <button id="oblicz"onclick="nwd1()">Oblicz NWD1</button>
+    <button id="oblicz"onclick="nwd2()">Oblicz NWD2</button>
+    <hr>
+    <p>
+    </p>
+</div>
+
+<script type="text/javascript">
+    function nwd1() {
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        a1 = a = parseInt(a);
+        b1 = b = parseInt(b);
+        while (a != b) {
+            if (a > b)
+            a = a - b;
+        else
+            b = b - a;
+        }
+        w = document.getElementsByClassName("wynik");
+        w[0].innerHTML = "Nwd = " + a;
+
+    }
+</script>
+Nwd(100, 5) = 5
+</body>
+
+</html>
