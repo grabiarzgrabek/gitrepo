@@ -9,10 +9,10 @@ int nominaly[100];
 int liczbaNominalow;
 
 void wczytajNominaly(){
-	cout << "Podaj liczbe nominalow: ";
+	cout << "Podaj liczbe nomina³ów: ";
 	cin >> liczbaNominalow;
 
-	cout << "Podaj nominaly w kolejnosci malejacej: " << endl;
+	cout << "Podaj nomina³y w kolejnosci malej¹cej: " << endl;
 	int i = 0;
 	int nominal = 0;
 	cin >> nominal;
@@ -21,7 +21,7 @@ void wczytajNominaly(){
 	while(i < liczbaNominalow){
 		cin >> nominal;
 		if (nominal > nominaly[i-1]) {
-			cout << "Nominal jest wiekszy od poprzedniego" << endl;
+			cout << "Nomina³ wiekszy od poprzedniego!" << endl;
 			continue;
 		}
 		nominaly[i] = nominal;
@@ -37,14 +37,14 @@ void wczytajNominaly(){
 
 
 int znajdzReszte(int reszta){
-	cout << "Wyplacone nominaly: " << endl;
+	cout << "Wyp³acone nomina³y: " << endl;
 	int aktualnyNominal = 0;
 
 	while(reszta > 0 && aktualnyNominal < liczbaNominalow){
 		cout << "reszta = " << reszta << endl;
-		//znajdz najwiekszy dostepny nominal mniejszy od reszty;
-		cout << "aktualny nominal: " << nominaly[aktualnyNominal] << endl;
-		//oblicz wymagana ilosc nominalÃ³w
+		//znajdz najwiekszy dostepny nominal mniejszy ood reszt;
+		cout << "aktualny nomina³: " << nominaly[aktualnyNominal] << endl;
+		//oblicz wymagana ilosc nominalów
 		//pomniejsz reszte
 
 	}
@@ -56,17 +56,15 @@ int main(int argc, char **argv)
 	wczytajNominaly();
 	int cena;
 	int wplata;
-	int aktualnyNominal = 0;
-	cout << "Podaj cene: ";
+	cout << "Podaj cenê: ";
 	cin >> cena;
 
-	do { // petla blokujÄ…ca
-		cout << "Podaj wplate: ";
+	do { // petla blokuj¹ca
+		cout << "Podaj wp³atê: ";
 		cin >> wplata;
-	} while (wplata < cena);
+	} while(wplata < cena);
 
-    cout << "aktualny nominal: " << nominaly[aktualnyNominal] << endl;
-	cout << "reszta: " << wplata - cena << endl;
+	znajdzReszte(wplata - cena);
 
 	return 0;
 }
