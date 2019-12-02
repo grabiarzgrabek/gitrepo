@@ -26,57 +26,38 @@ void wczytajNominaly(){
 		}
 		nominaly[i] = nominal;
 		i++;
-	};
+	}
 
 	//for(int i = 0; i < liczbaNominalow; i++){
 		//cin >> nominaly[i];
 	//}
 	for(int i = 0; i < liczbaNominalow; i++){
 		cout << nominaly[i] << " "; }
-	{
-    cout << endl;
-}
-
-int policzNominal(int n) {
-    int ile = 0;
-    for (i = 0; i < liczbaNominalow; i++) {
-        if (n>nominaly[i]) break;
-        if (nominaly[i] == n)
-        ile++;
-    }
-    return ile;
-}
-    
+	}
 
 
-void znajdzReszte(int reszta){
+int znajdzReszte(int reszta){
 	cout << "Wyplacone nominaly: " << endl;
 	int aktualnyNominal = 0;
 
 	while(reszta > 0 && aktualnyNominal < liczbaNominalow){
 		cout << "reszta = " << reszta << endl;
-        
-        while(aktualnyNominal < liczbaNominalow && reszta < nominaly[aktualnyNominal])
-            ++aktualnyNominal;
+		//znajdz najwiekszy dostepny nominal mniejszy od reszty;
 		cout << "aktualny nominal: " << nominaly[aktualnyNominal] << endl;
-        
-        if (aktualnyNominal < liczbaNominalow && reszta >= nominaly[aktualnyNominal]) {
-            int liczbaBanknotow = reszta / nominal;
-            cout << "Dostepnych bominalow: " << policzNominal(nominal) << endl;
-            reszta = reszta - liczbaBanknotow * nominal;
-            cout << liczbaBanknotow << "x" << nominal << "zł" << endl;
-        }
-    }
-    if (reszta > 0);
-    cout << "Brak nominalow do wydania reszty" << endl;
+		//oblicz wymagana ilosc nominalów
+		//pomniejsz reszte
+
+	}
 
 }
-// [50, 50, 50, 20, 10, 10, 5, 5, 5, 1]
 int main(int argc, char **argv)
 {
 	wczytajNominaly();
 	int cena;
 	int wplata;
+    int reszta, P, i;
+	int aktualnyNominal = 0;
+    int N[liczbaNominalow] = nominaly;
 	cout << "Podaj cene: ";
 	cin >> cena;
 
@@ -85,7 +66,15 @@ int main(int argc, char **argv)
 		cin >> wplata;
 	} while (wplata < cena);
 
-    znajdzReszte(wplata - cena);
+    cout << "aktualny nominal: " << nominaly[aktualnyNominal] << endl;
+	cout << reszta << wplata - cena << endl;
+    
+    if (reszta >= N[i]) {
+    P = reszta / N[i];
+    reszta=reszta-(N[i]*P);
+    cout << N[i] << " razy " << P << endl;
+}
+    i++;
 
 	return 0;
 }
