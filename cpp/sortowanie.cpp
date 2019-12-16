@@ -46,21 +46,41 @@ void zamien(int &a, int &b) {
 }
 
 void selection_sort(int tab[], int n) {
+    int ile = 0;
 	int i, j, k;
-	for(i=1; i<n; i++) {
+	for(i=0; i<n; i++) {
 		k = i;
 		for (j=i+1; j<n; j++) {
 			if (tab[j] < tab[k])
 				k=j;
 		}
 		zamien(tab[k], tab[i]);
+        ile++;
 	}
+    cout << "Zamian: " << ile << endl;
 }
 // 5, 3, 8, 5, 1, 0, 9
 // 0, 3, 8, 5, 1, 5, 9
 // 0, 1, 8, 5, 3, 5, 9
 // 0, 1, 3, 5, 8, 5, 9
 // 0, 1, 3, 5, 5, 8, 9
+void bubble_sort(int tab[], int n) {
+    int ile = 0;
+    for (int i = n-1; i > 0; i--) {
+        cout << "Indeks i = " << i << endl;
+        for (int j=0; j<i; j++) {
+            cout << "Indeks j = " << j << endl;
+            if (tab[j] < tab[j+1]) {
+                zamien(tab[j], tab[j+1]);
+                ile++;
+            }
+        }
+        cout << endl;
+    }
+    cout << "Zamian: " << ile << endl;
+}
+
+
 
 int main(int argc, char **argv) {
 	int tab[50];
@@ -71,7 +91,8 @@ int main(int argc, char **argv) {
 	wypelnij(tab, n);
 	copytab(tab, tab2, n);
 	wyswietl(tab2, n);
-	selection_sort(tab, n);
+	//selection_sort(tab, n);
+    bubble_sort(tab2, n);
 	wyswietl(tab, n);
 	return 0;
 }
