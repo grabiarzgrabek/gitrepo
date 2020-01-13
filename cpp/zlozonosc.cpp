@@ -6,6 +6,10 @@
 #include <iostream>
 using namespace std;
 
+// Ln = 1
+// Ln = n
+// Ln = 0
+
 int main(int argc, char **argv)
 {
     int n = 5;

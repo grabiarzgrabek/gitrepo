@@ -76,6 +76,8 @@ void bubble_sort(int tab[], int n){
 	cout << "Zamian: " << ile << endl;
 
 	}
+    
+    DLA N L
 
 int main(int argc, char **argv){
 	int n;
