@@ -1,0 +1,35 @@
+<script>
+// Edit your script here
+var a = 5;
+var b = 10;
+var c = a + b;
+console.log(c);
+document.write("<h1>"+c+"</h1>");
+window.alert(c);
+document.write('<p id="js"></p>');
+document.getElementById()"js").innerHTML
+</script>
+
+
+<script>
+var a = parseInt(prompt('Podaj bok a: '));
+var b = parseInt(prompt('Podaj bok b: '));
+var c = parseInt(prompt('Podaj bok c: '));
+document.write(a + b + c);
+if (a+b>c && a+c>b && b+c>a) {
+	window.alert('Da sie');
+} else {
+	window.alert('Nie da sie');
+}
+</script>
+
+
+<script>
+var dlugosc = 10; // liczba
+wav
+var osoba = {
+	imie:"Adam", 
+    nazwisko;"Słodowy",
+    wiek: 25
+}:
+</script>

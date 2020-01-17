@@ -1,0 +1,142 @@
+11011(2) = 1 *2^4 + 1*2^3 + 1*2^1 +1 = 27
+
+Adres servera 192.168.3.3
+Ctrl + D - tworzenie zakładki
+materialy/web/cwiczenia
+
+
+
+
+
+
+C++ wymaga deklaracji typu zmiennej
+int - liczby calkowite
+float - liczby ułamkowe   
+każda instrukcja kończu się średnikiem
+kompilacja - F8, Zbuduj / Complete      
+error: no match for operator
+warning: unused variable
+pliki obiektowe rozszerzenie ".o"
+linkowanie - F9, Zbuduj / Build
+Uruchomienie F5,Zbuduj / wykonaj
+
+Preferencje / Narzędzia / Terminal:
+terminator -e "/bin/sh %c"
+
+    11/9 środa 2019
+Dostosowanie wyglądu strony
+Sublime text: bootstrap 4 snippets html boilerplate. html js css prettify
+CDN - content delivery
+    13/9 poniedziałek 2019
+i++ - inkrementacja zmiennej, tj. powiększenie o 1
+i-- - dekrementacja zmiennej, tj. pomniejszenie o 1
+
+1.Edycja/Preferecnje/Narz©dzia/Terminal:terminator-e"/bin/sh %c"
+2.Build: g++-Wall-o "%e.exe" "%f"
+3.Execute: "./%e.exe"
+F8 F9 F5
+
+
+error: "x" was not declared
+
+    18/9 środa 2019
+
+rem - relative to the font-size of the root element
+
+    4/10 piątek 2019
+php -S localhost:8000
+
+
+
+    7/10 poniedziałek 2019
+    
+void nazwafunkcji(parametry) {
+    zmienne lokalne
+    przesłanie zmienncyh globalnych
+    ciało funkcji;
+}
+
+zwracany_typ nazwaFunkcji(ew.parametry) {
+    ciało funkcji;
+}
+
+przekazywanie argumentów przez wartość(by value)
+przekazywanie argumentów przez referemcje(by reference)
+
+
+    25/11 poniedziałek 2019
+    
+Schemat Hornera
+
+y = a0 * x ^ 2 + a1 * x + a2
+
+Mnożeń: 3
+Sum: 2
+
+y = (a0 * x + a1) * x + a2
+
+Mnożeń: 2
+Sum: 2
+
+    15/01 środa 2020
+kompilowanie (C++, kompilator, linker)
+interpretowanie(PHP, Python, Java Script)
+
+wyprowadzanie dancyh tekstowych:
+pint(), echo(), echo
+
+Server wykonuje kod php z rozszerzeniem:
+.php
+
+Dane, które zmieniają bazę danych przesyłamy z formularza za pomocą:
+POST
+
+W skrypcie php dane z formularza logowania dostępne są w:
+tablicy $_POST
+
+JeSli chcemy wyszukać w serwisie WWW jakieś infirmacje przesyłąmy w żądaniu dane
+GET
+
+Walidacja danych z formularzy polega na:
+używaniu odpowiedznich atrybutów HTML5
+Sprawdzaniu po stronie servera, czy dane spełniają określone kryteria
+
+Java Scriptu można używać
+po stronie srevera i klienta
+
+Sprawdzanie poprawności loginu i hasła to przykład:
+walidacji, autentykacja
+
+Do sprawdzenia czy zmienna istnieje i nie ma wartości NULL użyję:
+isset()
+
+Funkcja array_Key_exists sprawdza
+czy w tabeli istnieje podany klucz
+
+Dos prawdzenia czy zmienna nie istnieje/wart 0
+empty()
+
+Funkcje php, których mozna użyć w sprawdzaniu poprawności przesyłanych danych:
+strlen(), trim(), htmlspecialchars()
+
+zmienne w PHP:
+nie wymagają deklaracji, są tworzone w momencie pierwszego przypisania
+
+Do tworzenia nowych zmiennych podczas wykonywania skryptu użyjemy:
+&($zmienna) = 'wartosc'
+
+Aby wartość zmiennej znalazła się w ciągu znakowym, użyjemy zapisu:
+"zmienna:($tab(zmienna))"
+"zmienna:$zmienna"
+
+Jeżeli w formularzu HTML typu...
+$_POST['kod']
+
+Nazwa instrukcji PHP, która umoźliwia przeglądanie elementów
+foreach
+
+Dostęp do pierwszego elementu:
+
+
+
+
