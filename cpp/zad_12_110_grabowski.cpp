@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-void dzielniki(int *&tab, int p) {
+void dziel(int *&tab, int p) {
 	int n=1;
 	tab = new int[p];
 	for(int i=0;i<p;i++) {
@@ -31,13 +31,13 @@ void wyswietl(int *tab,int p) {
 }
 void boubble_sort(int *tab,int p)
 {
-  double pom; 
+  double z; 
   for(int i=0;i<p;i++)
     for(int j=0;j<p-i-1;j++) 
     if(tab[j]<tab[j+1]) {
-	  pom = tab[j];
+	  z = tab[j];
       tab[j] = tab[j+1];
-      tab[j+1] = pom;
+      tab[j+1] = z;
     }
 }
 
@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
 	int *tab;
 	cout<<"Podaj liczbe:"<<endl;
 	cin>>p;
-	dzielniki(tab,p);
+	dziel(tab,p);
 	cout<<"Dzielniki:"<<endl;
 	wyswietl(tab,p);
 	boubble_sort(tab,p);

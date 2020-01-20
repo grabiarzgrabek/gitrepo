@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h>
+
 #include <time.h>
 
 
@@ -19,7 +19,6 @@ int main()
     cin >> c;
     cout << "Twoje liczby to: " << x <<" " << y <<" " << z <<" " << a <<" " << b <<" " << c <<" "<< endl;
     cout << "wylosowane liczby to:"<< endl;
-    Sleep(3000);
     srand(time(NULL));
 
     for (int i=1; i<=6; i++)
