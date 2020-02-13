@@ -139,4 +139,19 @@ Dostęp do pierwszego elementu:
 
 
 
+.7z to najbardziej wydajny typ archiwum
+rodzaje kompresji danych:
+bezstratna: 7zip, zip, xz, rar
+
+1kb = 1024b
+
+
+wspolczynnik kompresji
+Rc = Vk / Vml * 100%
+Vnk = 784 kB
+Vk = 110,2 kB
+Rc = 110,2/784 * 100% = 14%
+
+R'c = (1 - Vk/Vnk) * 100%
+
 
