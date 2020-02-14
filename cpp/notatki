@@ -146,12 +146,17 @@ bezstratna: 7zip, zip, xz, rar
 1kb = 1024b
 
 
-wspolczynnik kompresji
-Rc = Vk / Vml * 100%
-Vnk = 784 kB
-Vk = 110,2 kB
-Rc = 110,2/784 * 100% = 14%
 
-R'c = (1 - Vk/Vnk) * 100%
+**rodzaje kompresji:**
+1) kompresja bezstratna: 7zip, zip, xz, rar (np. do plików tekstowych
+2) 
 
+W s p ó ł c z y n n i k  k o m p r e s j i:
+Rc = Vk / Vnk * 100%
+np.:
+Vnk = (784 kB) objętość danych nieskompresowanych
+Vk = (11,2 kB) (skompresowane)
+Rc = 110.2/784 * 100% (O IL EZMNIEJSZYLY SI EDANE)
+
+Rc = (1 - Vk/Vnk) * 100% (ILE MIEJSCA ZAOSZCZEDZONO)
 

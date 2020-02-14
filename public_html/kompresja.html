@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8" />
+<title>kompresja</title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+<hr>
+<label>rozmiar przed kompresją:</label>
+<br>
+<input type="number" id="przed">
+<br>
+<label>rozmiar po kompresji:</label>
+<br>
+<input type="number" id="po">
+<br>
+<br>
+<button onclick="kompresuj()">wylicz współczynnik kompresji</button>
+
+<script type="text/javascript">
+    function kompresuj() {
+        a = document.getElementById("przed").value;
+        b = document.getElementById("po").value;
+        if (a > b)
+            c=a/b;
+            alert(c);
+    }
+</script>
+</body>
+
+</html>

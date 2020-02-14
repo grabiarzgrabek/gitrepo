@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Uzycie tablic w JavaScript</title>
+
+</head>
+
+<body>
+<p id="samochod"></p>
+<hr>
+<input type="text" id="indeks">
+<button onclick="displayCar()">Wpisz</button>
+    
+<script type="text/javascript">
+    var cars = ["Saab", "Fiat", "Opel"];
+    //alert(cars.length);
+    //alert(cars[0]);
+    
+    function displayCar() { 
+        var i = document.getElementById("indeks").value;
+        if (i > -1 && i < cars.length - 1) {
+            alert("OK BOOMER");
+        }
+}
+    
+</script>
+
+
+
+</body>
+
+</html>
