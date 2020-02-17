@@ -1,0 +1,17 @@
+The rain in Spain falls mainly on the plain.
+The rain <3,3>Sp<9,4>`falls m<11,3>ly on <34,4>pl<15,3>.
+44 bajty
+44 - 15 + 5 = 34
+34
+<x, t>
+<6, 2> = 1 bajt
+32 16 8 4 21
+34
+
+1111(2) = F(16)
+
+Moją pasją są kompresje i ich wersje komputerowe.
+Moją pas<6,3>s<3,2>konpresje i ich wer<13,4><23,4>uterowe
+
+ 
+
