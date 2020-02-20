@@ -10,8 +10,16 @@ The rain <3,3>Sp<9,4>`falls m<11,3>ly on <34,4>pl<15,3>.
 
 1111(2) = F(16)
 
-Moją pasją są kompresje i ich wersje komputerowe.
-Moją pas<6,3>s<3,2>konpresje i ich wer<13,4><23,4>uterowe
+Moją pasją są kompresje i ich komputerowe wersje.
+Moją pas<6,3>są kompre<13,2>e i ich <16,4>uterowe wer<25,3>.
+
+55 bajtów (rozmiat nieskompresowany)
+
+55 - 12 + 4 = 47
+47/55 * 100 % = 85%
+<5, 3> = 1 bajt
+16 8 4 2 1
+25
 
  
 
