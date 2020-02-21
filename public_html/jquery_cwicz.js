@@ -8,7 +8,7 @@ $(document). ready(function() {
      var div2 = '<div class="wspolczynnik">'+R+'</div>';
      $("div.wynik").after(div2);
   });
-  $("input").mousemove(function(){
+  $("input").mouseover(function(){
     $(this).addClass("tloBlue")
   });
 });
