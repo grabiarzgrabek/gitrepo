@@ -1,0 +1,3 @@
+<p>
+<strong>to jest treść jakaś</strong>
+</p>

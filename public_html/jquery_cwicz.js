@@ -15,4 +15,19 @@ $(document).ready(function(){
     $(this).removeClass("tłoBlue");
   });
 });
-  $()
+  $("#i3").mouseover(function(){
+    $("#i4").toggle();
+  });
+  $("#i3").mouseout(function(){
+    $("#i4").toggle();
+  });
+  $("#i3").mouseover(function(){
+    $("#i4").hide(100);
+  });
+  $("#i3").mouseout(function(){
+    $("#i4").show(100);
+  });
+
+  $("#tytul").click(function(){
+    $("#tresc").slidedown("slow");
+  });
