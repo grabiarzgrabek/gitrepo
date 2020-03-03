@@ -6,8 +6,10 @@
 $(document).ready(function(){
   $("#b1").click(function(){
     $("#div1").load("demo_test.txt");
+  });
   $("#b2").click(function(){
-    $("#div1").load("demo_test.txt");
+    $.get("getinfo.php",function(data){
+      $("#div1").html(data);
     });
   });
 });
@@ -17,7 +19,9 @@ $(document).ready(function(){
 
 <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
 
-<button>Get External Content</button>
+<button id="b1">Metoda $.load()</button>
+
+<button id="b2">Żądanie $.get()</button>
 
 </body>
 </html>
