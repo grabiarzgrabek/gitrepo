@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8" />
+<title>kalkulator</title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+<hr>
+<label>Liczba 1:</label>
+<br>
+<input type="number" id="1">
+<br>
+<label>Liczba 2:</label>
+<br>
+<input type="number" id="2">
+<br>
+<br>
+
+<button onclick="oblicz1()"> + </button>
+<script type="text/javascript">
+    function oblicz1() {
+        a = document.getElementById("1").value;
+        b = document.getElementById("2").value;
+            c=a+b;
+            alert(c);
+    }
+</script>
+
+<button onclick="oblicz2()"> - </button>
+<script type="text/javascript">
+    function oblicz2() {
+        a = document.getElementById("1").value;
+        b = document.getElementById("2").value;
+            c=a-b;
+            alert(c);
+    }
+</script>
+
+<button onclick="oblicz3()"> * </button>
+<script type="text/javascript">
+    function oblicz3() {
+        a = document.getElementById("1").value;
+        b = document.getElementById("2").value;
+            c=a*b;
+            alert(c);
+    }
+</script>
+
+<button onclick="oblicz4()"> / </button>
+<script type="text/javascript">
+    function oblicz4() {
+        a = document.getElementById("1").value;
+        b = document.getElementById("2").value;
+            c=a%b
+            alert(c);
+}
+
+</script>
+
+</body>
+
+</html>

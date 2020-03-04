@@ -1,33 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
-    <title>Uzycie tablic w JavaScript</title>
-
+    <title>użycie tablic w java scripcie</title>
 </head>
 
 <body>
-<p id="samochod"></p>
-<hr>
-<input type="text" id="indeks">
-<button onclick="displayCar()">Wpisz</button>
-    
+
+<p id="samochód"></p>
+<input type="text" id="index">
+<button onclick="auto()">Wpisz</button>
 <script type="text/javascript">
     var cars = ["Saab", "Fiat", "Opel"];
-    //alert(cars.length);
-    //alert(cars[0]);
-    
-    function displayCar() { 
-        var i = document.getElementById("indeks").value;
-        if (i > -1 && i < cars.length - 1) {
-            alert("OK BOOMER");
+    function auto(){
+        var i = document.getElementById("index").value;
+        if (i>-1 && i < cars.length){
+            alert(cars[i]);
         }
-}
-    
+        else {
+            alert("Błędny index");
+        }
+    }
 </script>
-
-
-
 </body>
 
 </html>
