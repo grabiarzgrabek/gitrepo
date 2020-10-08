@@ -1,0 +1,29 @@
+DROP TABLE IF EXISTS tbOddzialy;
+
+CREATE TABLE tbOddzialy (
+    id         INTEGER NOT NULL
+                       PRIMARY KEY AUTOINCREMENT,
+    oznaczenia TEXT,
+    rok_naboru TEXT,
+    rok_matury TEXT
+);
+
+DROP TABLE IF EXISTS tbuczniowie;
+
+CREATE TABLE tbuczniowie (
+    id           INTEGER NOT NULL
+                         PRIMARY KEY,
+    imie         TEXT,
+    nazwisko     TEXT,
+    plec         INTEGER,
+    data_ur      DATE,
+    awatar       BLOB,
+    egzamin      INTEGER,
+    srednia_ocen DECIMAL,
+    uwagi        TEXT,
+    klasa_id     INTEGER,
+    FOREIGN KEY (
+        klasa_id
+    )
+    REFERENCES tbOddzialy (id) 
+);
